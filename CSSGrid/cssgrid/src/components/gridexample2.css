@@ -1,0 +1,24 @@
+.parent {
+  display: grid;
+  grid-template-columns: 33vw auto 50vw;
+  grid-template-rows: 40vh 30vh 30vh;
+  grid-template-areas: "header header header"
+                       "main . sidebar"
+                       "footer footer footer"
+}
+
+.header {
+  grid-area: header;
+}
+
+.main {
+  grid-area: main;
+}
+
+.sidebar {
+  grid-area: sidebar;
+}
+
+.footer {
+  grid-area: footer;
+}
