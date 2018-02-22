@@ -1,18 +1,21 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
-import './App.css';
 
 class App extends Component {
   render() {
     return (
       <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <h1 className="App-title">Welcome to React</h1>
-        </header>
-        <p className="App-intro">
-          To get started, edit <code>src/App.js</code> and save to reload.
-        </p>
+        <div style={{position: "relative", height: "100vh", width: "100vw"}}>
+          <div style={{position: "absolute", top: "10vh", left: "20vw", height: "10vh", width: "10vw", backgroundColor: "orange"}}>
+            <p>
+              hey here is a div
+            </p>
+          </div>
+          <div style={{position: "absolute", bottom: "10vh", right: "20vw", height: "20vh", width: "10vw", backgroundColor: "red"}}>
+            <p>
+              and another one.
+            </p>
+          </div>
+        </div>
       </div>
     );
   }
